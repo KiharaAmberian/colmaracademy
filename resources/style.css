@@ -1,0 +1,404 @@
+/* General specs*/
+html {
+  font-family: "Regular Patch", "Regular Bold", "Nunito Sans", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.75rem;
+}
+
+body {
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.padding {
+  padding: 0.8rem 0rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+i.fa.fa-bookmark,
+i.fa.fa-certificate {
+	font-size: 1.2rem;
+	font-weight: 800
+	color: #4e081b;
+}
+
+span.h4 {
+  font-family: 'Bitter', serif;
+	font-weight: bold;
+	font-size: 1rem;
+	color: #02192d;
+}
+
+span.quote {
+	font-size: 2rem;
+	font-weight: 800;
+	color: #0871cc;
+}
+
+h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin: 2rem 0rem 0.85rem 0rem;
+  text-shadow: 0.8px 0.8px white;
+  font-family: 'Courgette', cursive;
+  padding-bottom: 200px;
+  text-align-last: center;
+  color: rgba(23, 23, 23, 1);
+}
+
+
+h3 {
+  font-size: 2.55rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  padding-top: 0.3rem;
+  letter-spacing: 1.33px;
+  font-family: 'K2D', sans-serif;
+  color: rgba(56, 56, 56, 1);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0px 8px;
+  margin-bottom: 0.75rem;
+  padding-top: 2rem;
+  font-family: 'Mukta', sans-serif;
+  text-align-last: center;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0px 8px;
+  font-family: 'Bitter', serif;
+  text-align: left;
+}
+
+.main-banner-text h4,
+.info-banner h4,
+.right-column h4 {
+  margin-left: 0rem;
+}
+
+p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.9rem;
+  margin: 0.43rem 0rem;
+  line-height: 1.15rem;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+
+p.detail {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+/*header*/
+header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  background-color: black;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 2.5rem;
+  margin-left: 24px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: -9px;
+
+}
+
+.logo-container p {
+  font-weight: normal;
+  font-size: 26px;
+  color: rgba(219, 219, 219, 1);
+}
+
+.flex-logo {
+  background-color: rgba(186, 148, 33, 1);
+  margin-left: 5px;
+  width:3.5rem;
+}
+
+.logo-container span {
+  color: rgba(122, 122, 122, 1);
+  font-family: "Cabin", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  margin-left: 8px;
+}
+/*navigation bar*/
+nav {
+  padding-right: 1rem;
+}
+
+nav span {
+  padding: 0px 8px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'KoHo', sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  color: rgba(219, 170, 20, 1);
+  transition: ease-in;
+}
+
+#icon-nav {
+  display: none;
+}
+
+#icon-nav img {
+  opacity: 0.55;
+}
+
+nav li a{
+	color: #4a4a4a;
+	padding: 1.35rem 0.5rem 1.35rem 0.5rem;
+	transition: color 0.700s linear;
+}
+
+nav li .active,
+nav li .link-desktop:hover{
+	background-color: #0871cc;
+	color: #ffffff;
+}
+
+.mobile{
+	display: none;
+ }
+
+/*Main banner*/
+.main-banner {
+	background-color: rgba(219, 219, 219, 1);
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+}
+
+.main-banner-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  background-image: url("lion.jpg");
+  background-color:rgba(0, 0, 0, 0) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
+.main-banner img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner-img {
+  min-width: 60%;
+  width:60%;
+}
+
+.column-left {
+	display: flex;
+	flex-direction: column;
+	width: 57%;
+	padding: 0 1.5%;
+}
+
+.column-left img {
+	max-width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column-left .content {
+	margin-top: 2rem;
+}
+
+.column-right {
+	display: flex;
+	flex-direction: column;
+	width: 39.9%;
+	}
+
+.column-right .content {
+	width: 95%;
+}
+
+.column-right.center {
+	justify-content: center;
+}
+
+.info {
+  font-family: 'K2D', sans-serif;
+  font-weight: lighter;
+  color: rgba(173, 137, 46, 1);
+}
+
+/*Button*/
+#btn {
+  background: none;
+  border: 2px solid black;
+  font-family: 'Abel', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	width: 350px;
+  height: 40px;
+	text-decoration: none;
+  text-align: center;
+	text-shadow:1px 1px 1px white;
+  color: black;
+  margin-left: 80px;
+  letter-spacing: 0.1rem;
+  padding-top: 5px;
+}
+
+#btn:hover {
+  background: rgba(219, 170, 20, 1);
+  transition-duration: 300ms;
+  color: white;
+  text-shadow: none;
+  border: 2px solid rgba(186, 148, 33, 1);
+}
+
+#btn:active {
+	position: center;
+	top:0px;
+}
+
+/*Main content*/
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box .image{
+	width:35%;
+	padding: 1rem;
+}
+
+.box img{
+	max-width: 100%;
+	-webkit-filter: brightness(70%);
+	filter: brightness(70%);
+}
+
+.box img:hover{
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
+}
+
+.image .mobile{
+	display: none;
+}
+
+.box .content{
+	width: 65%;
+	padding-left: 1rem;
+}
+
+.detail{
+	padding: 0.5rem 0;
+}
+
+.box .content a{
+	color: rgba(173, 137, 46, 1);
+  text-decoration: underline;
+}
+
+.box.active{
+	background-color: #e8e5e5;
+}
+.box:hover{
+	background-color: #d8d8d8;
+}
+
+/*detail divs*/
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.fa-bookmark:before {
+    content: "\f02e";
+}
+
+/*Start Learning Section*/
+.main-learning {
+	background-color: #eaebec;
+}
+
+.title {
+	text-align: center;
+	padding-bottom: 0.8rem;
+}
+
+.courses {
+	display: flex;
+	padding: 0 3.5rem 2rem 3.5rem;
+	flex-wrap: wrap;
+}
+
+.courses-mobile {
+	display: none;
+}
+
+.courses .box {
+	flex-direction: column;
+	width: 30%;
+	justify-content: flex-start;
+	color: #4a4a4a;
+	background-color: #ffffff;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content {
+	padding: 1rem 2rem 2rem 1rem;
+}
+/*Thesis Area*/
+
+.thesis {
+  padding-top: 1rem;
+}
+
+/*Footer*/
+footer.flex {
+	justify-content: space-around;
+}
+
+footer {
+	background-color: #f3f5f5;
+	padding: 1rem 0.5rem;
+  align-items: center;
+}
+
+footer a {
+	padding-right: 0.5rem;
+}
