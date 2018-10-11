@@ -19,13 +19,15 @@ body {
   flex-wrap: wrap;
 }
 
+/*Icons*/
 i.fa.fa-bookmark,
 i.fa.fa-certificate {
 	font-size: 1.2rem;
-	font-weight: 800
-	color: #4e081b;
+	font-weight: 800;
+	color: rgba(153, 133, 61, 1);
 }
 
+/*Spans*/
 span.h4 {
   font-family: 'Bitter', serif;
 	font-weight: bold;
@@ -39,6 +41,7 @@ span.quote {
 	color: #0871cc;
 }
 
+/*H's*/
 h2 {
   font-size: 2.7rem;
   font-weight: bold;
@@ -47,7 +50,7 @@ h2 {
   font-family: 'Courgette', cursive;
   padding-bottom: 200px;
   text-align-last: center;
-  color: rgba(23, 23, 23, 1);
+  color: rgba(39, 39, 37, 1);
 }
 
 
@@ -56,7 +59,7 @@ h3 {
   font-weight: bold;
   margin-bottom: 0.8rem;
   padding-top: 0.3rem;
-  letter-spacing: 1.33px;
+  letter-spacing: 0.083125rem;
   font-family: 'K2D', sans-serif;
   color: rgba(56, 56, 56, 1);
 }
@@ -64,17 +67,17 @@ h3 {
 h4 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin: 0px 8px;
-  margin-bottom: 0.75rem;
+  margin: 0rem 0rem;
   padding-top: 2rem;
   font-family: 'Mukta', sans-serif;
   text-align-last: center;
+
 }
 
 h5 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-left: 0px 8px;
+  margin-left: 0rem 0.5rem;
   font-family: 'Bitter', serif;
   text-align: left;
 }
@@ -85,12 +88,13 @@ h5 {
   margin-left: 0rem;
 }
 
+/*Paragraph*/
 p {
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 0.9rem;
   margin: 0.43rem 0rem;
   line-height: 1.15rem;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   color: #4a4a4a;
 }
 
@@ -102,10 +106,10 @@ p.detail {
 /*header*/
 header {
   display: flex;
-  height: 64px;
+  height: 4rem;
   align-items: center;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: black;
 }
 
@@ -116,22 +120,22 @@ header {
 
 .logo-container img {
   height: 2.5rem;
-  margin-left: 24px;
-  margin-right: 20px;
-  margin-top: 0px;
-  margin-bottom: -9px;
+  margin-left: 1.5rem;
+  margin-right: 1.25rem;
+  margin-top: 0rem;
+  margin-bottom: -0.5625rem;
 
 }
 
 .logo-container p {
   font-weight: normal;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: rgba(219, 219, 219, 1);
 }
 
 .flex-logo {
   background-color: rgba(186, 148, 33, 1);
-  margin-left: 5px;
+  margin-left: 0.3125rem;
   width:3.5rem;
 }
 
@@ -139,17 +143,18 @@ header {
   color: rgba(122, 122, 122, 1);
   font-family: "Cabin", sans-serif;
   font-weight: bold;
-  letter-spacing: 1.5px;
-  font-size: 24px;
-  margin-left: 8px;
+  letter-spacing: 0.09375rem;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
+
 /*navigation bar*/
 nav {
   padding-right: 1rem;
 }
 
 nav span {
-  padding: 0px 8px;
+  padding: 0rem 0.5rem;
 }
 
 a {
@@ -185,16 +190,210 @@ nav li .link-desktop:hover{
 	color: #ffffff;
 }
 
-.mobile{
-	display: none;
- }
+/*TEST----------------------------------------*/
+/*Media Query*(Nav)*/
+@media only screen and (max-width: 700px) {
+  #text-nav {
+    display: none;
+  }
 
+  header {
+    background-color:rgba(186, 148, 33, 1);
+  }
+
+  #icon-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    align-items: center;
+  }
+
+  #icon {
+    display: none;
+  }
+
+  #icon-nav a {
+    padding: 0rem 0.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    line-height: 1.2rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  #icon-nav {
+    padding: 0rem 0rem
+  }
+
+  .logo-container {
+    display: none;
+  }
+  #icon {
+    display: flex;
+  }
+  #icon-nav {
+    width: 100%;
+  }
+  #icon-nav img {
+    height: 2.33rem;
+  }
+  header {
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
+  }
+}
+/*-------------------banner------------------------*/
+@media only screen and (max-width: 770px) {
+  .main-banner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .main-banner {
+    width: auto;
+    padding: 0;
+  }
+
+  .main-banner .main-banner-text {
+    width: auto;
+    padding: 1rem 0rem;
+  }
+
+  .main-banner img {
+    width: 100%;
+    margin-left: none;
+    }
+
+    div.main-banner {
+      margin: 0;
+    }
+
+    a#btn {
+      align-items: center;
+      margin: 0rem;
+      padding-top: 1rem;
+      margin-left: 2rem;
+    }
+
+    h2 {
+      padding-bottom: 2rem;
+      align-items: center;
+      font-size: 1.9rem;
+      line-height: 2rem;
+      margin-bottom: 9rem;
+    }
+
+/*Left column*/
+  div.column-left {
+      display: none;
+  }
+
+  div.box.border.active {
+      display: flex;
+      width: 26.95rem;
+      align-items: center;
+  }
+  /*Start learning Area*/
+  div.main-thesis.padding {
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  h3.title {
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+    line-height: 3rem;
+    padding: 1.3rem;
+    background-color:rgba(189, 158, 46, 1);
+  }
+
+  div.mobile-display {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Bitter', serif;
+    font-size: 1.2rem;
+    align-items: center;
+    align-content: space-between;
+    background-image: url("students.jpg");
+    background-position: cover;
+  }
+
+  #software-engineering, #computer-art, #design, #data, #business, #marketing {
+    margin: 1rem;
+    border: 2px solid rgba(186, 148, 33, 1);
+    padding: 0.7rem;
+    width: 75%;
+    font-weight: bold;
+  }
+
+  /*Hidden courses area*/
+  div.courses {
+    padding: 0rem;
+    display: none;
+  }
+  .courses {
+    width: 8rem;
+  }
+  div.box.border.active {
+    display: none;
+  }
+
+  div.box.border {
+    display: none;
+  }
+  div.main-info.flex.padding {
+    padding: 0rem;
+    margin: 0rem;
+  }
+  div.mobile-display {
+    padding: 0rem;
+    margin: 0rem;
+  }
+  #video-mobile {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px){
+  #video-mobile {
+    display: none;
+  }
+  div.mobile-display {
+    display: none;
+  }
+
+}
+/*TEST----------------------------------------*/
 /*Main banner*/
 .main-banner {
 	background-color: rgba(219, 219, 219, 1);
-  padding-left: 24px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
 }
 
@@ -207,17 +406,17 @@ nav li .link-desktop:hover{
   background-color:rgba(0, 0, 0, 0) ;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 150px;
+  background-size: 9.375rem;
 }
 
 .main-banner img {
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .banner-img {
-  min-width: 60%;
-  width:60%;
+  height: 100%;
+  width: 100%;
 }
 
 .column-left {
@@ -229,7 +428,7 @@ nav li .link-desktop:hover{
 
 .column-left img {
 	max-width: 100%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .column-left .content {
@@ -261,17 +460,18 @@ nav li .link-desktop:hover{
   background: none;
   border: 2px solid black;
   font-family: 'Abel', sans-serif;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: bold;
-	width: 350px;
-  height: 40px;
+	width: 21rem;
+  height: 2.5rem;
 	text-decoration: none;
   text-align: center;
+  align-items: center;
+  margin-left: 4rem;
 	text-shadow:1px 1px 1px white;
   color: black;
-  margin-left: 80px;
   letter-spacing: 0.1rem;
-  padding-top: 5px;
+  padding-top: 0.3125rem;
 }
 
 #btn:hover {
@@ -358,6 +558,11 @@ nav li .link-desktop:hover{
 	padding-bottom: 0.8rem;
 }
 
+h3.title {
+  background-color: #eaebec;
+  margin: 0rem;
+}
+
 .courses {
 	display: flex;
 	padding: 0 3.5rem 2rem 3.5rem;
@@ -376,16 +581,21 @@ nav li .link-desktop:hover{
 	background-color: #ffffff;
 	margin-left: 2rem;
 	margin-top: 1rem;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .content {
 	padding: 1rem 2rem 2rem 1rem;
 }
-/*Thesis Area*/
 
+/*Thesis Area*/
 .thesis {
   padding-top: 1rem;
+}
+
+/*Video*/
+#video-mobile {
+  display:;
 }
 
 /*Footer*/
